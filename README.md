@@ -7,13 +7,12 @@
   <img src="https://img.shields.io/github/downloads/nccgroup/LoggerPlusPlus/total?style=for-the-badge" alt="GitHub All Releases">
   <img src="https://img.shields.io/github/license/nccgroup/LoggerPlusPlus?style=for-the-badge" alt="GitHub License">
 </p>
-
+Modified by secinto GmbH
 Developed by Corey
 Arthur  [![Twitter Follow](https://img.shields.io/badge/follow-%40CoreyD97-1DA1F2?logo=twitter&style=social)](https://twitter.com/coreyd97/)  
 Originally by Soroush
 Dalili  [![Twitter Follow](https://img.shields.io/badge/follow-%40irsdl-1DA1F2?logo=twitter&style=social)](https://twitter.com/irsdl/)
 
-Released as open source by NCC Group Plc - https://www.nccgroup.com/  
 Released under AGPL-3.0 see LICENSE for more information
 
 Description
