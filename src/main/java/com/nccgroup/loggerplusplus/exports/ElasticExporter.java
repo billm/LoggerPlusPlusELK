@@ -24,7 +24,7 @@ import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.GetIndexRequest;
-import org.elasticsearch.common.xcontent.XContentBuilder;
+import org.elasticsearch.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentElasticsearchExtension;
 
 import javax.swing.*;
@@ -38,7 +38,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
+import static org.elasticsearch.xcontent.XContentFactory.jsonBuilder;
 
 public class ElasticExporter extends AutomaticLogExporter implements ExportPanelProvider, ContextMenuExportProvider {
 
@@ -204,7 +204,7 @@ public class ElasticExporter extends AutomaticLogExporter implements ExportPanel
         }
         builder.endObject();
 
-        return new IndexRequest(this.indexName, "doc").source(builder); //TODO Remove deprecated ES6 methods.
+        return new IndexRequest(this.indexName).source(builder); //TODO Remove deprecated ES6 methods.
     }
 
     private void indexPendingEntries(){
