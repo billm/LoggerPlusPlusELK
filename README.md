@@ -3,4 +3,3 @@
 
 Forked from [NCCGroup LoggerPlusPlus](https://github.com/nccgroup/LoggerPlusPlus/releases/latest). Same rules apply.
 
-Update to run GH Actions
