@@ -34,7 +34,6 @@ dependencies {
 jar {
     archivesBaseName = rootProject.name
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-	destinationDirectory = file("$rootDir/lib")
 
     from {
         (configurations.runtimeClasspath).collect { it.isDirectory() ? it : zipTree(it) }
@@ -44,4 +43,6 @@ jar {
         exclude "META-INF/*.RSA"
     }
 }
-
+tasks.withType(Jar) {
+    destinationDir = file("$rootDir/releases")
+}
