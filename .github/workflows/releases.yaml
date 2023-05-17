@@ -37,4 +37,3 @@ jobs:
           files: |
             releases/*.jar
         id: "automatic_releases"
-
